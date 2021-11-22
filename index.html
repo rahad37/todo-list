@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="bg-dark mb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar justify-content-between">
+            <a class="navbar-brand">Todo List</a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                id="searchTextBox" />
+            </form>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="todo-outer">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-8">
+          <h1>JavaScript Todo List Application</h1>
+          <div class="todo-inner">
+            <div class="form-row">
+              <div class="col-8 mr-sm-2">
+                <input type="text" class="form-control" placeholder="Enter your task" id="addTaskInput" />
+                <input type="hidden" id="saveIndex">
+              </div>
+              <button type="button" class="btn btn-warning mr-sm-2" id="addTaskBtn">
+                Add Task
+              </button>
+              <button type="button" class="btn btn-secondary mr-sm-2" id="saveTaskBtn" style="display: none">
+                Save Task
+              </button>
+              <button type="button" id="deleteAllBtn" class="btn btn-danger">
+                Delete All
+              </button>
+            </div>
+            <div class="to-do-output">
+              <table class="table table-striped mt-3 mb-0" id="addedTaskList">
+               
+                             
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/test.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+`<tr>
+  <th scope="row">${index+1}</th>
+  <td>${item}</td>
+  <td><button type="button" onclick="edittask(${index})" class="text-primary"><i class="fa fa-edit"></i>Edit</button></td>
+  <td><button type="button" onclick="deleteitem(${index})" class="text-danger"><i class="fa fa-trash"></i>Delete</button></td>
+</tr>` -->
