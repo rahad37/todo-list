@@ -1,4 +1,4 @@
-# Live-Link
+# JavaScript To-Do List (Live-Link)
 https://my-todo-listing.netlify.app/
 
 ## Description
